@@ -1,0 +1,11 @@
+/* Hide specific unwanted elements */
+header, .work.meta.group, .summary.module, .notes.module, .kudos, .tall, [class='region'], form {
+  display: none !important;
+}
+
+/* Show the user content */
+.userstuff {
+  margin: auto;
+  max-width: 700px;
+  /*display: block !important; Ensure it's displayed */
+}

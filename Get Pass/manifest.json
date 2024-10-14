@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Password Input Logger",
+    "description": "Logs the password input in the console.",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+		"scripts": ["js/background.js"]
+	},
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    }
+  }
+  
