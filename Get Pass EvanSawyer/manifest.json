@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Get Pass Evan Sawyer",
     "description": "Logs the password input in the console.",
-    "version": "1.0",
+    "version": "2.0",
     "permissions": ["activeTab"],
     "content_scripts": [
       {

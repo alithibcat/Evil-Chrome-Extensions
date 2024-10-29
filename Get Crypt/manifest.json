@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Get Session",
+    "description": "Accesses session ID of browser session",
+    "version": "1.0",
+    "permissions": [
+        "storage", "activeTab", "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+        }
+    ]
+}
+  
